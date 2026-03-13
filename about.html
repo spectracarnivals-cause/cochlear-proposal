@@ -382,25 +382,6 @@
     }
 
 
-    /* Smaller floating buttons on mobile */
-@media (max-width: 900px) {
-
-  .floating-cause {
-    padding: 10px 16px;
-    font-size: 0.72rem;
-    gap: 6px;
-  }
-
-  .floating-cause span {
-    font-size: 14px;
-  }
-
-  .about-floating-btn {
-    padding: 8px 20px;
-    font-size: 11px;
-  }
-
-}
     
 /* ── FLOATING CSR BUTTON (TOP CENTER) ───────────────── */
 .floating-cause {
@@ -685,7 +666,7 @@ window.addEventListener("scroll", () => {
   const height = document.body.scrollHeight - window.innerHeight;
 
   if (scroll > height * 0.45) {
-      causeText.textContent = "Support the Cause";
+      causeText.textContent = "Support for the Cause";
   } else {
       causeText.textContent = "Beats for the Cause";
   }

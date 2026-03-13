@@ -387,7 +387,7 @@ header h1 em {
 }
 
 #verticals {
-scroll-margin-top:2500px;
+scroll-margin-top:125px;
 }
 
 .point-list {
@@ -924,6 +924,7 @@ footer a { color: var(--teal); text-decoration: none; }
     </div>
   </div>
 
+  <div id="verticals" class="section-label fade-in delay-3"></div>
   <!-- ── THREE VERTICALS ── -->
   <div class="section-label fade-in delay-3">
     <div class="section-label-line"></div>
@@ -1214,9 +1215,13 @@ Book Day Fest Stall
 
 </div>
 
-<!-- ── THREE VERTICALS ── -->
-<div id="verticals" class="section-label fade-in delay-3">
-<div class="action-bar">
-
+<script>
+document.querySelectorAll('.action-btn').forEach(btn=>{
+btn.addEventListener('click',function(){
+document.getElementById('verticals').scrollIntoView({behavior:'smooth'});
+});
+});
+</script>
+  
 </body>
 </html>

@@ -446,8 +446,6 @@
 </head>
 <body>
 
-<a href="./index.html" id="causeButton" class="floating-cause" title="Back to Beats for a Cause">
-
 
 <!-- NAV -->
 <nav>
@@ -652,27 +650,8 @@
   reveals.forEach(el => observer.observe(el));
 </script>
 
-<script>
-
-const causeButton = document.getElementById("causeButton");
-
-window.addEventListener("scroll", function() {
-
-  const scrollPosition = window.scrollY;
-  const pageHeight = document.body.scrollHeight - window.innerHeight;
-
-  if (scrollPosition > pageHeight * 0.45) {
-      causeButton.innerHTML = "💚 Support the Cause";
-  } else {
-      causeButton.innerHTML = "🎧 Beats for a Cause";
-  }
-
-});
-
-</script>
-
-
-  <span>🎧</span> Beats for a Cause
+<a href="index.html" id="causeButton" class="floating-cause">
+  🎧 <span class="cause-text">Back to Cause</span>
 </a>
 
 </body>
